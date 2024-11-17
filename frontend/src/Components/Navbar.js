@@ -3,6 +3,10 @@ import {Link} from "react-router-dom"
 const Navbar = () => {
   return (
     <div>
+        <div className='bg-slate-700 rounded'>
+        <h1 className='tx'>Save and Invest</h1>
+        </div>
+       
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
