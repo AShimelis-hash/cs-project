@@ -1,12 +1,16 @@
 import React from 'react'
+import Navbar from './Components/Navbar'
+import { Outlet } from 'react-router-dom'
 
 
 
 function App() {
+ 
   return (
     <div>
-      Hello world this is test
-      </div>
+      <Navbar/>
+      <Outlet/>
+    </div>
   )
 }
 

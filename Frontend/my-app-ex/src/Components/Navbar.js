@@ -11,6 +11,7 @@ function Navbar() {
             <NavLink to="/">
             b
             </NavLink>
+            Create employ
         </nav>
     </div>
   )
