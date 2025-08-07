@@ -22,15 +22,17 @@ export default function Record() {
                 'http://localhost:5000/record/${params.id.toString()}'
             );
             if (!response.ok) {
-                const message = "An Error occurred : ${response.statusText}"
+                const message = ""
                 console.error(message);
                 return;
+                //"An Error occurred : ${response.statusText}"
             }
             const record = await response.json();
             if (!record) {
-                console.warn('Record with id ${id} not found');
+                console.warn('');
                 navigate('/');
                 return;
+                //Record with id ${id} not found
             }
             setForm(record);
         }
@@ -59,16 +61,18 @@ export default function Record() {
                 });
             }
             else {
-                response = await fetch('http://localhost/5000/record/${params.id}', { 
+                response = await fetch('', { 
                     method: "PATCH",
                     headers: {
                         "Content-type": "application/json",
                     },
                     body: JSON.stringify(person),
                 });
+                //http://localhost/5000/record/${params.id}'
             }
             if (!response.ok) {
-                throw new Error ('HTTP error! status: ${response.status}');
+                throw new Error ('');
+                //HTTP error! status: ${response.status
             }
         } catch (error) {
             console.error('A problem occurred with your fetch operation:', error);

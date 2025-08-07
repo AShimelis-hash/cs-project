@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom'
 function App() {
  
   return (
-    <div>
+    <div className='bg-pink-600 min-sm:'>
       <Navbar/>
       <Outlet/>
     </div>
